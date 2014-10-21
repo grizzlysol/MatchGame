@@ -1,0 +1,62 @@
+<!--
+    Name: Evan Christopher
+    Student ID:991134283
+    Professor: Osama Abu Rahmeh
+    Course: Syst 10199 - Web Development 2
+
+    Description:
+    This html file calls the css and javascript file to allow the game to be run.
+    It also sets up the table which is used as by the user to play the game.
+    A button is added near the bottom of the page to show the user some helpful
+    information.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flash Cards</title>
+	    <link rel="stylesheet" href="css/css.css"/>
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <div id="playArea">
+            <h1>Number Match</h1>
+            <table>
+                <tr>
+                     <td id='0' onclick="checkData(0);"></td>
+                     <td id='1' onclick="checkData(1);"></td>
+                     <td id="2" onclick="checkData(2);"></td>
+                     <td id="3" onclick="checkData(3);"></td>
+                </tr>
+                <tr>
+                     <td id="4" onclick="checkData(4);"></td>
+                     <td id="5" onclick="checkData(5);"></td>
+                     <td id="6" onclick="checkData(6);"></td>
+                     <td id="7" onclick="checkData(7);"></td>
+                </tr>
+                <tr>
+                    <td id="8" onclick="checkData(8);"></td>
+                    <td id="9" onclick="checkData(9);"></td>
+                    <td id="10" onclick="checkData(10);"></td>
+                    <td id="11" onclick="checkData(11);"></td>
+                </tr>
+                <tr>
+                    <td id="12" onclick="checkData(12);"></td>
+                    <td id="13" onclick="checkData(13);"></td>
+                    <td id="14" onclick="checkData(14);"></td>
+                    <td id="15" onclick="checkData(15);"></td>
+                </tr>
+            </table>
+            <br>
+            <input type="button" id="howtoplay1" onclick="showInstructions();" value="How To Play"/>
+            <input type="button" id="howtoplay1" onclick="location.href='http://mobile.sheridanc.on.ca/~chriseva/fun/medium.html'"
+                   value="Hard Mode" style="display: inline-block"/>
+            <p id="howtoplay2">Click the squares to reveal a number.<br> If two
+                revealed numbers match, they remain flipped.<br> Numbers that do
+                not mach are hidden, so remembering positions is important.<br>
+                The player wins if all numbers are matched.<br>Good Luck!</p>
+        </div>
+        <script type="text/javascript" src="js/jsfunctions.js">
+        </script>
+    </body>
+</html>
