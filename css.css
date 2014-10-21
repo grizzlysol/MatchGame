@@ -1,0 +1,53 @@
+/*
+    Name: Evan Christopher
+    Student ID:991134283
+    Professor: Osama Abu Rahmeh
+    Course: Syst 10199 - Web Development 2
+
+    Description:
+    This css file lays out the format for the match game in index.html
+*/
+
+html{
+    font-family: Corbel, sans-serif;
+    background: linear-gradient(to bottom right,skyblue,ghostwhite);
+    height: 100%;
+}
+h1{
+    color: black;
+    text-shadow: 4px 4px 5px grey;
+}
+table{
+    text-align: center;
+    vertical-align: middle;
+    table-layout: fixed;
+    color: white;
+    font-family: Courier New, serif;
+
+}
+td{
+    width: 32px;
+    height: 32px;
+    border: 2px solid black;
+    background-color: green;
+
+}
+td:hover{
+    background-color: lightgreen;
+
+}
+
+#playArea{
+    width: 80%;
+    margin:auto;
+
+}
+#howtoplay1{
+    background-color: skyblue;
+    border-radius: 5px;
+    border: 2px solid dimgrey;
+
+}
+#howtoplay2{
+    visibility: hidden;
+}
